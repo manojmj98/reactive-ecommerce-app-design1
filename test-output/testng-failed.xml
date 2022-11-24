@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.myapp.spring.NumberSubscriberVerification">
+        <methods>
+          <include name="untested_spec212_blackbox_mustNotCallOnSubscribeMoreThanOnceBasedOnObjectEquality"/>
+          <include name="required_spec205_blackbox_mustCallSubscriptionCancelIfItAlreadyHasAnSubscriptionAndReceivesAnotherOnSubscribeSignal"/>
+          <include name="untested_spec301_blackbox_mustNotBeCalledOutsideSubscriberContext"/>
+          <include name="untested_spec315_blackbox_cancelMustNotThrowExceptionAndMustSignalOnError"/>
+          <include name="untested_spec204_blackbox_mustConsiderTheSubscriptionAsCancelledInAfterRecievingOnCompleteOrOnError"/>
+          <include name="setUp"/>
+          <include name="startPublisherExecutorService"/>
+          <include name="untested_spec310_blackbox_requestMaySynchronouslyCallOnNextOnSubscriber"/>
+          <include name="required_spec213_blackbox_onNext_mustThrowNullPointerExceptionWhenParametersAreNull"/>
+          <include name="untested_spec316_blackbox_requestMustNotThrowExceptionAndMustOnErrorTheSubscriber"/>
+          <include name="untested_spec211_blackbox_mustMakeSureThatAllCallsOnItsMethodsHappenBeforeTheProcessingOfTheRespectiveEvents"/>
+          <include name="untested_spec213_blackbox_failingOnSignalInvocation"/>
+          <include name="untested_spec308_blackbox_requestMustRegisterGivenNumberElementsToBeProduced"/>
+          <include name="untested_spec202_blackbox_shouldAsynchronouslyDispatch"/>
+          <include name="untested_spec206_blackbox_mustCallSubscriptionCancelIfItIsNoLongerValid"/>
+          <include name="untested_spec314_blackbox_cancelMayCauseThePublisherToShutdownIfNoOtherSubscriptionExists"/>
+          <include name="untested_spec208_blackbox_mustBePreparedToReceiveOnNextSignalsAfterHavingCalledSubscriptionCancel"/>
+          <include name="shutdownPublisherExecutorService"/>
+          <include name="untested_spec311_blackbox_requestMaySynchronouslyCallOnCompleteOrOnError"/>
+          <include name="untested_spec207_blackbox_mustEnsureAllCallsOnItsSubscriptionTakePlaceFromTheSameThreadOrTakeCareOfSynchronization"/>
+        </methods>
+      </class> <!-- com.myapp.spring.NumberSubscriberVerification -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
