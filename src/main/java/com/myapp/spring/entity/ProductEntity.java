@@ -9,7 +9,7 @@ import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 @Table("ecomproducts")
-public class Product {
+public class ProductEntity {
 	
 	@PrimaryKey("product_id")
 	@CassandraType(type = Name.TEXT)
